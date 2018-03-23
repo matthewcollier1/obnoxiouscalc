@@ -1,0 +1,56 @@
+.calculator {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.calculator__display {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.714285714em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+  -webkit-box-shadow: 4px 4px 8px #0000009e;
+  box-shadow: 4px 4px 8px #0000009e;
+  margin-right: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 3s;
+  -webkit-transition: all 4s;
+  transition: all 4s; }
+
+.calculator__keys {
+  z-index: 1;
+  background-color: #d8c8c8;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  -webkit-transition: all 3s;
+  transition: all 3s; }
+
+.is-depressed {
+  background-color: red; }
+
+.playing {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  border-color: red;
+  height: 5vh; }
+
+.key--equal {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe886a), to(#ff7033));
+  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  grid-column: -2;
+  grid-row: 2 / span 4; }
+
+/*# sourceMappingURL=style.css.map */
